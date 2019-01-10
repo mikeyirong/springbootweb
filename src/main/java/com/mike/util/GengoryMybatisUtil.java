@@ -10,6 +10,7 @@ import org.mybatis.generator.config.Configuration;
 import org.mybatis.generator.config.xml.ConfigurationParser;
 import org.mybatis.generator.internal.DefaultShellCallback;
 
+
 public class GengoryMybatisUtil {
 	public void generator() throws Exception{
         URL uri=this.getClass().getClassLoader().getResource("generatorConfig.xml");
@@ -24,7 +25,7 @@ public class GengoryMybatisUtil {
 		myBatisGenerator.generate(null);
 
 	} 
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) throws Exception {		
 		try {
 			GengoryMybatisUtil generatorSqlmap = new GengoryMybatisUtil();
 			generatorSqlmap.generator();
